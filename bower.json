@@ -1,0 +1,22 @@
+{
+  "name": "projectdos",
+  "homepage": "https://github.com/mabelfuenarez/projectdos",
+  "authors": [
+    "mabelfuenarez <mabel_ines@hotmail.es>"
+  ],
+  "description": "my second bootstrap projects",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My Second Bootstrap Project</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
+
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="index.html" class="navbar-brand">Chilaquiles con don Aquiles</a>
+        <button type="button" name="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+          <span class="sr-only">Toggle navigation!</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <button type="button" name="Search-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#search-collapse">
+          <span class="sr-only">Toggle search!</span>
+          <span><i class="glyphicon glyphicon-search"></i></span>
+        </button>
+      </div>
+      <!-- /.navbar-header -->
+      <div class="col-sm-2 col-md-3 collapse navbar-collapse pull-right" id="search-collapse">
+        <form class="navbar-form" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /#Search -->
+      <ul class="nav navbar-nav collapse navbar-collapse navbar-right" id="menu-collapse">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#modal-contact-form">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Navbar -->
+
+  <div class="container">
+    <div class="row">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Products</li>
+      </ol>
+    </div>
+    <div class="row">
+      <div class="page-header">
+        <h1>
+          Products.
+          <small>We build amazing stuff</small>
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Product One </h3>
+        <p class="text-muted">This is an awesome product one description</p>
+      </div>
+      <div class="col-md-6">
+        <div class="btn-group pull-right">
+          <button class="btn btn-info btn-lg">Buy Now </button>
+          <button class="btn btn-default btn-lg">Free Trial</button>
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="carousel-products" class="carousel slide" data-ride="carousel">
+        <!-- indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-products" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-products" data-slide-to="1"></li>
+          <li data-target="#carousel-products" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner text-center">
+          <div class="item active text-center">
+            <img src="img/6.jpg" alt="">
+            <div class="carousel-caption">
+              <p> A Nice Demo</p>
+            </div>
+          </div>
+          <div class="item text-center">
+            <img src="img/2.jpg" alt="">
+            <div class="carousel-caption">
+              <p> A Nice Demo</p>
+            </div>
+          </div>
+          <div class="item text-center">
+            <img src="img/3.jpg" alt="">
+            <div class="carousel-caption">
+              <p> A Nice Demo</p>
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a href="#carousel-products" class="left carousel-control" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#carousel-products" class="right carousel-control" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Cuerpo de sitio web -->
+<br>
+<div class="container">
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel-group" id="accordion" role="tablist">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a href="#collapseOne" role="button" data-toggle="collapse" data-parent="#accordion">
+              Question #1
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quo officia natus doloremque at sunt totam incidunt dignissimos inventore. Debitis voluptatibus aut enim quam animi dignissimos deserunt voluptas pariatur a.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a href="#collapseTwo" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion">
+              question #2
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quo officia natus doloremque at sunt totam incidunt dignissimos inventore. Debitis voluptatibus aut enim quam animi dignissimos deserunt voluptas pariatur a.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            <a href="#collapseThree" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion">
+              question #3
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quo officia natus doloremque at sunt totam incidunt dignissimos inventore. Debitis voluptatibus aut enim quam animi dignissimos deserunt voluptas pariatur a.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+<div class="pull-right">
+    <div class="row">
+      <h3>Testimonials</h3>
+
+            <blockquote>
+              <p>This is testimonial 1</p>
+              <small>John Doe</small>
+            </blockquote>
+            <blockquote>
+              <p>This is testimonial 2</p>
+              <small>John Doe</small>
+            </blockquote>
+            <blockquote>
+              <p>This is testimonial 3</p>
+              <small>John Doe</small>
+            </blockquote>
+          </div>
+        </div>
+</div>
+
+<div class="row">
+  <ul class="pager">
+    <li class="previous"><a href="#">&larr;Previous</a></li>
+    <li class="next"><a href="">Next&rarr;</a></li>
+  </ul>
+</div>
+</div>
+<hr>
+
+
+  <hr>
+  <div class="footer">
+    <p class="text-center lead">
+      Wanna get in touch? Email us at <a href="#">mabel@gmail.com</a>
+    </p>
+    <hr>
+    <ul class="list-unstyled text-center list-inline features">
+      <li>Follow us:</li>
+      <li>
+        <a href="#"><i class="fa fa-facebook-square"></i></a></li>
+      <li>
+        <a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li>
+        <a href=""><i class="fa fa-linkedin-square"></i></a></li>
+    </ul>
+    <p class="text-center text-muted">
+      &copy; Copyright 2017 Company Name
+    </p>
+  </div>
+
+  <!-- modal contact form -->
+  <div class="modal fade" id="modal-contact-form" rolre="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times</button>
+          <h3>Contact Us</h3>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="contact-name" class="form-control-label">Name:</label>
+              <input type="text" class="form-control" id="contact-name">
+            </div>
+            <div class="form-group">
+              <label for="contact-emlail" class="form-control-label">E-mail:</label>
+              <input type="email" class="form-control" id="contact-email">
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-control-label">Message:</label>
+              <textarea name="" id="contact-message" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <div class="controls">
+                <input type="submit" class="btn btn-primary" value="Send Message">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.carousel').carousel({
+        interval: 1000
+      });
+    });
+  </script>
+</body>
+
+</html>

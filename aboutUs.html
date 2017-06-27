@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My Second Bootstrap Project</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
+
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="index.html" class="navbar-brand">Chilaquiles con don Aquiles</a>
+        <button type="button" name="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+          <span class="sr-only">Toggle navigation!</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <button type="button" name="Search-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#search-collapse">
+          <span class="sr-only">Toggle search!</span>
+          <span><i class="glyphicon glyphicon-search"></i></span>
+        </button>
+      </div>
+      <!-- /.navbar-header -->
+      <div class="col-sm-2 col-md-3 collapse navbar-collapse pull-right" id="search-collapse">
+        <form class="navbar-form" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /#Search -->
+      <ul class="nav navbar-nav collapse navbar-collapse navbar-right" id="menu-collapse">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#modal-contact-form">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Navbar -->
+
+  <div class="container">
+    <div class="row">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">About Us</li>
+      </ol>
+    </div>
+    <div class="row">
+      <div class="page-header">
+        <h1>
+          About Us.
+          <small>Who we are.</small>
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>The Company </h3>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptatem ipsam tenetur, numquam tempora rem. Dolorum et illo, consequatur voluptatibus, repellat similique deserunt tempora alias excepturi dolorem provident explicabo dolor dignissimos
+          autem consequuntur officiis ratione minima placeat cupiditate, obcaecati odio ut. In quos laborum deleniti quas, mollitia itaque, repudiandae magnam et aperiam sapiente modi praesentium ipsam harum. Reiciendis praesentium, ratione.</p>
+      </div>
+      <div class="col-md-6 well text-center lead">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iure?</h1>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <h3>
+     The Team
+   </h3>
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <img src="img/3.jpg" alt="" height="80px">
+          <div class="caption">
+            <h4>Jone Doe</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quasi praesentium dignissimos asperiores veniam tempore culpa nulla optio minima a ab expedita sit sequi ad dolorem, incidunt accusamus aliquid eveniet consectetur accusantium,
+              dicta reiciendis quos libero, eum ex. Dolores, iusto?</p>
+
+            <p><a href="#"><i class="fa fa-twitter-square"></i></a> | <a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <img src="img/2.jpg" alt="" height="80px">
+          <div class="caption">
+            <h4>Jone Doe</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quasi praesentium dignissimos asperiores veniam tempore culpa nulla optio minima a ab expedita sit sequi ad dolorem, incidunt accusamus aliquid eveniet consectetur accusantium,
+              dicta reiciendis quos libero, eum ex. Dolores, iusto?</p>
+
+            <p><a href="#"><i class="fa fa-twitter-square"></i></a> | <a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <br>
+  </div>
+  <!-- Cuerpo de sitio web -->
+  <hr>
+  <div class="footer">
+    <p class="text-center lead">
+      Wanna get in touch? Email us at <a href="#">mabel@gmail.com</a>
+    </p>
+    <hr>
+    <ul class="list-unstyled text-center list-inline features">
+      <li>Follow us:</li>
+      <li>
+        <a href="#"><i class="fa fa-facebook-square"></i></a></li>
+      <li>
+        <a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li>
+        <a href=""><i class="fa fa-linkedin-square"></i></a></li>
+    </ul>
+    <p class="text-center text-muted">
+      &copy; Copyright 2017 Company Name
+    </p>
+  </div>
+
+  <!-- modal contact form -->
+  <div class="modal fade" id="modal-contact-form" rolre="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times</button>
+          <h3>Contact Us</h3>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="contact-name" class="form-control-label">Name:</label>
+              <input type="text" class="form-control" id="contact-name">
+            </div>
+            <div class="form-group">
+              <label for="contact-emlail" class="form-control-label">E-mail:</label>
+              <input type="email" class="form-control" id="contact-email">
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-control-label">Message:</label>
+              <textarea name="" id="contact-message" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <div class="controls">
+                <input type="submit" class="btn btn-primary" value="Send Message">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.carousel').carousel({
+        interval: 1000
+      });
+    });
+  </script>
+</body>
+
+</html>
